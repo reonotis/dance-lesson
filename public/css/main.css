@@ -1,0 +1,348 @@
+a{
+  color: rgb(168 85 247 / 1);
+  transition: 0.2s;
+}
+a:hover{
+  color: rgb(79, 10, 143);
+  text-shadow: rgb(168 85 247 / 1) 1px 0 10px;
+  text-decoration: underline;
+}
+a.a-delete{
+  color: rgb(247, 85, 85);
+  transition: 0.2s;
+}
+a.a-delete:hover{
+  color: rgb(143, 10, 10);
+  text-shadow: rgb(247, 85, 85) 1px 0 10px;
+  text-decoration: underline;
+}
+
+
+.flash-message{
+  position: absolute;
+  padding: 10px;
+  right: 0;
+  width: 400px;
+  background-color: rgba(73, 240, 87, 0.418);
+  border: solid 1px rgb(31, 173, 43);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+.flash-message-error{
+  background-color: rgba(240, 73, 73, 0.418);
+  border: solid 1px rgb(173, 31, 31);
+}
+.flash-message-close{
+  position: absolute;
+  right: 10px;
+  font-size: 1.5em;
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+.flash-message-close:hover{
+  transform: rotate(-45deg);
+}
+
+.list-table-01{
+  width: 100%;
+  text-align: left;
+  table-layout: auto;
+}
+.list-table-01 tbody tr {
+  border-bottom-width: 1px;
+  border-color: rgb(192 132 252 / 1);
+}
+
+.list-table-01 th,
+.list-table-01 td{
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.list-table-01 th{
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  color: rgb(255 255 255 / 1);
+  background-color: rgb(168 85 247 / 1);
+}
+.list-table-01 tr th:nth-of-type(1){
+  border-top-left-radius: 0.5rem;
+}
+.list-table-01 tr th:last-child{
+  border-top-right-radius: 0.5rem;
+}
+
+
+
+
+
+.show-table-01{
+  text-align: left;
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+}
+.show-table-01 th,
+.show-table-01 td{
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-bottom-width: 1px;
+  border-color: rgb(192 132 252 / 1);
+}
+.show-table-01 th{
+  letter-spacing: 0.05em;
+  font-weight: 500;
+  color: rgb(255 255 255 / 1);
+  background-color: rgb(168 85 247 / 1);
+}
+.show-table-01  tr:nth-child(1) th{
+  border-top-left-radius: 0.5rem;
+}
+.show-table-01 tr:last-child th{
+  border-bottom-left-radius: 0.5rem;
+}
+.show-table-01 tr:last-child th,
+.show-table-01 tr:last-child td{
+  border-bottom:none;
+}
+
+
+
+.create-table-01{
+  text-align: left;
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+}
+.create-table-01 th,
+.create-table-01 td{
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-bottom-width: 1px;
+  border-color: rgb(146, 187, 253);
+}
+.create-table-01 th{
+  max-width: 200px;
+  letter-spacing: 0.05em;
+  font-weight: 500;
+  color: rgb(255 255 255 / 1);
+  background-color: rgb(59 130 246 / 1);
+}
+.create-table-01  tr:nth-child(1) th{
+  border-top-left-radius: 0.5rem;
+}
+.create-table-01 tr:last-child th{
+  border-bottom-left-radius: 0.5rem;
+}
+.create-table-01 tr:last-child th,
+.create-table-01 tr:last-child td{
+  border-bottom:none;
+}
+
+
+
+
+.create-input{
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  background-color: rgb(243 244 246 / 0.5);
+  border-color: rgb(209 213 219 / 1);
+  border-radius: 0.25rem;
+  border-width: 1px;
+}
+.create-input:focus{
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 0px #fff;
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + 0px) rgb(191 219 254 / 1);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow),  0 0 #0000;
+  background-color: rgb(255 255 255 / 1);
+  border-color: rgb(59 130 246 / 1);
+}
+
+.create-input-radio{
+  margin-left: 10px;
+}
+
+
+
+
+
+
+
+
+
+.courses-area{
+  width: 100%;
+}
+.course-box{
+  width: 100%;
+  background: rgb(246, 239, 253);
+  margin: 0 0 20px;
+  padding: 10px;
+}
+.myCourseWrapper{
+  display: flex;
+  width: 100%;
+  margin: 0 0 10px;
+}
+.myCourseLinkArea{
+  text-align: right;
+  width: 150px;
+}
+.myCourseLinkArea>a{
+  margin-right: 20px;
+}
+.myCourseTitle{
+  width: calc(100% - 150px);
+}
+.myCourseName{
+  width: 100%;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+.myCourseStatus{
+  width: 80px;
+  padding: 3px 10px;
+  margin-right: 5px;
+  font-size: 0.8em;
+  text-align: center;
+}
+.myCourseStatus_0{
+  background: rgb(252, 214, 214);
+  color: rgb(247, 0, 0);
+}
+.myCourseStatus_1{
+  background: rgb(213, 243, 214);
+  color: rgb(0, 139, 5);
+}
+.myCourse-numTimes{
+  width: 80px;
+  padding: 3px 10px;
+  font-size: 0.8em;
+  text-align: center;
+  background: rgb(243, 236, 213);
+  color: rgb(165, 129, 10);
+}
+.numTimes-0{
+  background: rgb(252, 214, 214);
+  color: rgb(247, 0, 0);
+}
+.numTimes-1{
+  background: rgb(213, 243, 214);
+  color: rgb(0, 139, 5);
+}
+
+
+.myCourseContent{
+  display: flex;
+  margin-bottom: 5px;
+  font-size: 0.9em;
+}
+.myCourseArea{
+  width: 150px;
+}
+.myCourseAreaValue{
+  margin-left: 10px;
+  font-size: 1.4em;
+  font-weight: 500;
+}
+.myCoursePrice{
+  width: 200px;
+}
+.myCoursePriceValue{
+  margin-left: 10px;
+  font-size: 1.4em;
+  font-weight: 500;
+}
+.myCourseRequest{
+  width: 200px;
+}
+.myCourseRequestValue{
+  margin-left: 10px;
+  font-size: 1.4em;
+  font-weight: 500;
+}
+.myCourseReview{
+  margin-bottom: 5px;
+  padding: 5px 10px;
+  border: solid 1px rgb(164, 85, 243);
+  border-radius: 5px;
+}
+.myCourseSchedule{
+  padding: 10px;
+  background: rgb(240, 231, 250);
+  border-radius: 5px;
+  box-shadow: 2px 2px 10px rgba(185, 131, 240, 0.452);
+}
+.course-detail{
+  display: flex;
+  width: 100%;
+  border-bottom: solid 1px #333;
+  margin: 5px 0;
+}
+.course-detail-wrapper{
+  margin:0 20px 0 0;
+}
+
+
+
+
+
+
+.create-form-row{
+  width: 100%;
+  border-bottom: solid 1px rgb(59 130 246 / 1);
+  padding: 5px 0;
+  display: flex;
+}
+.create-form-title{
+  width: 150px;
+  padding: 10px;
+  background-color: rgb(59 130 246 / 1);
+  color: #fff;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.create-form-content{
+  width: calc(100% - 150px);
+  padding: 10px;
+  display: flex;
+  flex-direction: column
+}
+.create-form-content-row{
+  width: 100%;
+}
+.course-area-wrapper{
+  width: 80px;
+  display: flex;
+  align-items: center;
+}
+.course-area-content{
+  width: calc(100% - 80px);
+}
+
+
+
+.support-span{
+  font-size: 0.8em;
+  color:rgb(100, 100, 100);
+  margin: 6px 0 0;
+}
+
+

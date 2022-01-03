@@ -8,6 +8,9 @@ use App\Http\Controllers\Owner\Auth\NewPasswordController;
 use App\Http\Controllers\Owner\Auth\PasswordResetLinkController;
 use App\Http\Controllers\Owner\Auth\RegisteredUserController;
 use App\Http\Controllers\Owner\Auth\VerifyEmailController;
+use App\Http\Controllers\Owner\CourseController;
+use App\Http\Controllers\Owner\CourseDetailsController;
+use App\Http\Controllers\Owner\ScheduleController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -24,6 +27,25 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('owner.welcome');
 });
+
+Route::resource('course', CourseController::class)
+    ->middleware('auth:owners');
+
+Route::prefix('schedule')->
+    middleware('auth:owners')->group(function(){
+        Route::get('index/{course_id}', [ScheduleController::class, 'index'])->name('schedule.index');
+        Route::get('createById/{course_id}', [ScheduleController::class, 'createById'])->name('schedule.createById');
+        Route::get('edit/{course_id}', [ScheduleController::class, 'edit'])->name('schedule.edit');
+        Route::post('store', [ScheduleController::class, 'store'])->name('schedule.store');
+    });
+
+Route::prefix('course_details')->
+    middleware('auth:owners')->group(function(){
+        Route::get('index/{course_id}', [CourseDetailsController::class, 'index'])->name('course_details.index');
+        Route::get('createById/{course_id}', [CourseDetailsController::class, 'createById'])->name('course_details.createById');
+        Route::get('edit/{course_id}', [CourseDetailsController::class, 'edit'])->name('course_details.edit');
+        Route::post('store', [CourseDetailsController::class, 'store'])->name('course_details.store');
+    });
 
 Route::get('/dashboard', function () {
     return view('owner.dashboard');
